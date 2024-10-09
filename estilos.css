@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #091f09; 
+    color: #f4f4f4; 
+}
+
+.banner {
+    background-color: #0f3d13;
+    color: white;
+    padding: 0;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.content-left {
+    width: 65%;
+}
+
+.sidebar {
+    width: 30%;
+    padding: 20px;
+    background-color: #30343f;
+    border-radius: 10px;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border: 2px solid #222;
+    border-radius: 10px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.nav-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.form-container, .encuesta-container {
+    margin-top: 20px;
+}
+
+form {
+    margin-top: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.social-links img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0f3d13;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+h2, h3 {
+    color: #27d824;
+}

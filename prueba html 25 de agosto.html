@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #091f09; 
+            color: #f4f4f4; 
+        }
+        .banner {
+            background-color: #0f3d13;
+            color: white;
+            padding: 0;
+        }
+        .banner img {
+            width: 100%;
+            height: auto;
+        }
+        .main-container {
+            display: flex;
+            flex-direction: row;
+        }
+        .content-left {
+            width: 70%;
+            padding: 20px;
+            background-color: #0f3d13;
+        }
+        .sidebar {
+            width: 30%;
+            padding: 20px;
+            background-color: #1b611f;
+            border-left: 1px solid #26862e;
+        }
+        h2, h3 {
+            color: #63d86d;
+        }
+        .slider {
+            position: relative;
+            max-width: 100%;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+        .slide img {
+            width: 100%;
+            height: 400px;
+        }
+        .slider-nav {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        .nav-button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        iframe {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+        .social-links {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #f4f4f4;
+        }
+        .social-links img {
+            margin-right: 10px;
+        }
+        .footer {
+            background-color: #091f09;
+            text-align: center;
+            padding: 10px 0;
+            color: #26862e;
+        }
+        .form-container {
+            margin-bottom: 20px;
+        }
+        .form-container iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+        .encuesta-container {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img src="img/banner.png" alt="Banner de la página"> 
+    </div>
+
+    <div class="main-container">
+        <div class="content-left">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="C:\Users\jeffe\Documents\html\img\slide1.jpg" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="C:\Users\jeffe\Documents\html\img\slide2.jpg" alt="Slide 2">
+                    </div>
+                    <div class="slide">
+                        <img src="C:\Users\jeffe\Documents\html\img\slide3.png" alt="Slide 3">
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <button class="nav-button" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="nav-button" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+            </div>
+
+            <h2>Objetivos del programa ADSO</h2>
+            <p>
+                Análisis de sistemas: Los estudiantes adquieren competencias para identificar necesidades de información en una organización, proponer soluciones a problemas de procesamiento de datos y organizar los requerimientos de los sistemas.
+                Diseño de sistemas: Capacita a los estudiantes para modelar la estructura y funcionamiento de sistemas de información, usando herramientas de diseño y estándares de la industria.
+                Desarrollo de software: Involucra el uso de lenguajes de programación, bases de datos y frameworks para crear aplicaciones de software que respondan a las necesidades analizadas y diseñadas.
+            </p>
+            <br>
+            <h2>¿Qué es el Desarrollo de Software?</h2>
+            <p>
+                El desarrollo de software es el proceso de creación, diseño, implementación y mantenimiento de programas informáticos que cumplen funciones específicas para resolver problemas o mejorar procesos en diversas áreas.
+            </p>
+            <h2>¿Con qué Lenguaje de Programación Iniciar?</h2>
+            <p>Elegir el lenguaje de programación correcto es esencial al comenzar tu viaje en la programación. Aquí te presento algunos de los mejores lenguajes para principiantes y un breve resumen de cada uno.</p>
+            <ol>
+                <li>
+                    <strong>Python</strong><br>
+                    Ideal para: Desarrollo web, ciencia de datos, inteligencia artificial.<br>
+                    Ventajas: Sintaxis simple y clara, fácil de aprender y con una gran comunidad. Perfecto para principiantes y aplicaciones versátiles.
+                    
+                </li>
+                <br>
+                <a href="https://argentinaenpython.com/quiero-aprender-python/aprenda-a-pensar-como-un-programador-con-python.pdf" target="_blank">
+                    <img src="https://www.cursosgis.com/wp-content/uploads/1-50.png" alt="Python" width="20">
+                    PDF para iniciar en python
+                </a>
+            </ol>
+            <ol>
+                <li>
+                    <strong>JavaScript</strong><br>
+                    Ideal para: Desarrollo web (frontend y backend).<br>
+                    Ventajas: Esencial para crear páginas web interactivas y dinámicas. Alta demanda laboral en el ámbito del desarrollo web.                    
+                </li>
+                <br>
+                <a href="https://www.um.es/docencia/barzana/DAWEB/Lenguaje-de-programacion-JavaScript-1.pdf" target="_blank">
+                    <img src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png" alt="JavaScript" width="20">
+                    PDF para iniciar en JavaScript
+                </a>
+            </ol>
+            <ol>
+                <li>
+                    <strong>Java</strong><br>
+                    Ideal para: Desarrollo de aplicaciones móviles (Android) y aplicaciones empresariales.<br>
+                    Ventajas: Ampliamente utilizado en empresas y aplicaciones móviles. Ofrece una buena base en programación orientada a objetos.                    
+                </li>
+                <br>
+                <a href="https://www.tesuva.edu.co/phocadownloadpap/Fundamentos%20de%20programcion%20en%20Java.pdf" target="_blank">
+                    <img src="https://1000marcas.net/wp-content/uploads/2020/11/Java-logo.png" alt="Java" width="20">
+                    PDF para iniciar en JavaScript
+                </a>
+            </ol>
+            <ol>
+                <li>
+                    <strong>PHP</strong><br>
+                    Ideal para: Desarrollo web del lado del servidor.<br>
+                    Ventajas: Muy utilizado en la creación de sitios web dinámicos y aplicaciones web. Popular en plataformas como WordPress y sistemas de gestión de contenido (CMS). Fácil de integrar con HTML y bases de datos.                    
+                </li>
+                <br>
+                <a href="https://iestpcabana.edu.pe/wp-content/uploads/2021/09/Programacion-con-PHP.pdf" target="_blank">
+                    <img src="https://seeklogo.com/images/P/php-logo-91EFDB12E1-seeklogo.com.png" alt="php" width="20">
+                    PDF para iniciar en PHP
+                </a>
+            </ol>
+        </div>
+
+        <div class="sidebar">
+            <div class="form-container">
+                <h3>Formulario de inscripción al SENA</h3>
+                <iframe src="http://www.senasofiaplus.edu.co/sofia-public/" title="Formulario SENA"></iframe>
+            </div>
+
+            <h3>Videos sugerentes</h3>
+            <iframe src="https://www.youtube.com/embed/VxrIZGQfxmE" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/MEuZICEDLJo" frameborder="0" allowfullscreen></iframe>
+
+            <div class="encuesta-container">
+                <h3>Participa en nuestra encuesta</h3>
+                <form action="#">
+                    <label for="opinion">¿Qué opinas sobre nuestra página web?</label>
+                    <select id="opinion" name="opinion">
+                        <option value="excelente">Excelente</option>
+                        <option value="buena">Buena</option>
+                        <option value="regular">Regular</option>
+                        <option value="mala">Mala</option>
+                    </select>
+                    <br><br>
+                    <label for="mejora">¿Qué te gustaría mejorar?</label>
+                    <textarea id="mejora" name="mejora" rows="4" cols="30"></textarea>
+                    <br><br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+            <h3>Redes Sociales</h3>
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="20">
+                    Facebook
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="20">
+                    Instagram
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 ADSO Jefferson Diaz. Todos los derechos reservados.</p>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+
+        function showSlides() {
+            const slides = document.querySelector('.slides');
+            const totalSlides = document.querySelectorAll('.slide').length;
+            slideIndex++;
+            if (slideIndex > totalSlides - 1) { slideIndex = 0; }
+            slides.style.transform = `translateX(${-slideIndex * 100}%)`;
+        }
+
+        function moveSlide(n) {
+            const slides = document.querySelector('.slides');
+            const totalSlides = document.querySelectorAll('.slide').length;
+            slideIndex += n;
+            if (slideIndex >= totalSlides) { slideIndex = 0; }
+            if (slideIndex < 0) { slideIndex = totalSlides - 1; }
+            slides.style.transform = `translateX(${-slideIndex * 100}%)`;
+        }
+
+        setInterval(showSlides, 5000);
+    </script>
+</body>
+</html>
